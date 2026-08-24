@@ -356,7 +356,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Bariego-Quintana]
+  last_name: [Bariego-Quintana, Bariego]
   first_name: [Adriana, A.]
 
   style: apa

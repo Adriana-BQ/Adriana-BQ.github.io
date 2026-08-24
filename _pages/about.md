@@ -37,11 +37,7 @@ latest_posts:
 
 <h2 class="plain-title">About me.</h2>
 
-  /* ---- hero band -------------------------------------------------------
-     Swap the image by replacing assets/img/hero.jpg (keep the filename), or
-     change the path below. Around 2000px wide and dark-ish works best —
-     the overlay only darkens further, it cannot rescue a bright photo.
-     -------------------------------------------------------------------- */
+  
   .hero {
     position: relative;
     display: flex;
@@ -54,9 +50,10 @@ latest_posts:
     background-image: url("/assets/img/hero.jpg");
     background-size: cover;
     background-position: center;
-    background-color: #10161c; /* shows through if the image is missing */
+    background-color: #10161c; 
   }
   /* the dark translucent layer — raise the numbers to darken further */
+  
   .hero::before {
     content: "";
     position: absolute;

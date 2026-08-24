@@ -25,19 +25,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-
+<!-- IMPORTANT: never leave a blank line inside this <style> block. Kramdown ends a raw
+     HTML block at the first blank line, and everything after it gets printed as page text. -->
 <style>
-  /* The theme prints the "news" and "selected publications" headings in lower case.
-     These are the only <h2> on this page, so capitalising them here is enough.
-     This block only affects the about page — it is inlined into this page alone. */
-  h2 {
-    text-transform: capitalize;
-  }
-</style>
-
-<h2 class="plain-title">About me.</h2>
-
-  
+  /* The theme prints "news" and "selected publications" in lower case; capitalise them. */
+  h2 { text-transform: capitalize; }
+  /* ...except headings written by hand, which are already cased correctly. */
+  h2.plain-title { text-transform: none; }
+  /* ---- hero band. Swap the picture by replacing assets/img/hero.jpg (keep the name). ---- */
+  /* Use something around 2000px wide and already dark: the overlay only darkens further. */
   .hero {
     position: relative;
     display: flex;
@@ -50,10 +46,9 @@ latest_posts:
     background-image: url("/assets/img/hero.jpg");
     background-size: cover;
     background-position: center;
-    background-color: #10161c; 
+    background-color: #10161c; /* shows through if the image is missing */
   }
-  /* the dark translucent layer — raise the numbers to darken further */
-  
+  /* the dark translucent layer — raise both numbers towards 1 to darken further */
   .hero::before {
     content: "";
     position: absolute;
@@ -72,9 +67,7 @@ latest_posts:
     text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
   }
   @media (max-width: 576px) {
-    .hero {
-      padding: 1.1rem;
-    }
+    .hero { padding: 1.1rem; }
   }
 </style>
  
@@ -83,9 +76,7 @@ latest_posts:
 </div>
 <h2 class="plain-title">About me</h2>
 
-I spend my PhD trying to catch it doing something.
-
-I look in two very different places. One is underwater: with the KM3NeT neutrino telescopes, sunk on the floor of the Mediterranean, I look for the neutrinos dark matter would produce if it annihilates. The other is the shape of galaxies, I use the way stellar streams twist out of their plane, and the way rotation curves stubbornly refuse to fall off, to work out how round or how stretched a dark matter halo actually is. Neither approach assumes what dark matter is made of. Both just ask the data.
+I spend my PhD trying to catch it doing something. I look in two very different places. One is underwater: with the KM3NeT neutrino telescopes, sunk on the floor of the Mediterranean, I look for the neutrinos dark matter would produce if it annihilates. The other is the shape of galaxies, I use the way stellar streams twist out of their plane, and the way rotation curves stubbornly refuse to fall off, to work out how round or how stretched a dark matter halo actually is. Neither approach assumes what dark matter is made of. Both just ask the data.
 
 Day to day this is code and statistics more than it is telescopes, which suits me: I like the moment a plot finally makes sense at 2am and I would not want it any other way.
 

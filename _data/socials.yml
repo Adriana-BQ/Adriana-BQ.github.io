@@ -16,14 +16,34 @@
 #   url: https://www.alberteinstein.com/
 
 
-email: REPLACE@uv.es # your email address
+email: adriana.bariego@gmail.com
 orcid_id: 0000-0001-5187-7505
-scholar_userid: REPLACE # the `user=` value in your Google Scholar profile URL
+# scholar_userid:                   # ← the `user=` value in your Scholar URL, e.g. qc6CJjYAAAAJ
+# inspirehep_id:                    # ← your INSPIRE author ID (you have a profile there)
 github_username: Adriana-BQ
-linkedin_username: REPLACE # the part after /in/ in your LinkedIn URL
-# x_username: REPLACE
-# bluesky_url: https://bsky.app/profile/REPLACE
-# inspirehep_id: REPLACE            # only if you are in high-energy physics
-# researchgate_profile: REPLACE
-cv_pdf: /assets/pdf/cv.pdf # puts a CV icon in the row
+linkedin_username: REPLACE # ← NOT your display name. Open your profile: the URL is
+#   linkedin.com/in/<this-bit>, usually something like
+#   adriana-bariego-quintana-1a2b3c4d. Copy exactly that.
+instagram_id: physicsunplugged
+youtube_id: physicsunplugged-abq # ← must match youtube.com/@<this>. If your channel URL
+#   is youtube.com/@physicsunplugged-abq this is right;
+#   if it is a /channel/UC... URL, use the UC... string.
+cv_pdf: /assets/pdf/cv.pdf
+ 
+# Substack has no built-in key, so it goes through custom_social.
+# `logo` takes either a Font Awesome / Academicons class or a file path.
+# Font Awesome 7 is already loaded by the theme, so the brand icon works as-is.
+custom_social:
+  # logo: fa-brands fa-substack
+  logo: /assets/img/substack.jpg
+  title: Substack
+  url: https://adriakerr.substack.com
+# If that icon ever fails to render, drop an SVG at assets/img/substack.svg
+# and use:  logo: /assets/img/substack.svg
+ 
 # rss_icon: true                    # no blog on this site, so the RSS icon is off
+# x_username:
+# bluesky_url: https://bsky.app/profile/REPLACE
+# tiktok_username:
+# research_gate_profile:            # note the underscore — it is research_gate_profile
+ 

@@ -48,8 +48,7 @@ nav_order: 3
     <h2>Dark matter at galactic scales</h2>
   </div>
   <p class="pub-section-note">
-    REPLACE — one line describing this line of work, e.g. “Stellar-stream torsion, halo shape and
-    galactic rotation curves.” Delete this paragraph if you would rather it went straight into the list.
+    A data-driven approach to the overall geometry of dark matter haloes at galactic scales. Rather than assuming a halo profile and fitting to it, these papers ask what the observations on their own can say about the shape of the mass distribution and the nature of dark matter, using galactic rotation curves, the torsion of stellar streams, and other kinematic tracers.
   </p>
   <div class="publications">
   {% bibliography %}
@@ -61,8 +60,7 @@ nav_order: 3
     <h2>KM3NeT Collaboration</h2>
   </div>
   <p class="pub-section-note">
-    Papers signed by the full KM3NeT Collaboration author list. My own contributions are in the
-    dark matter and neutrino-oscillation analyses — REPLACE or delete this sentence.
+    Papers signed by the full KM3NeT Collaboration author list.
   </p>
   <div class="publications">
   {% bibliography -f km3net %}

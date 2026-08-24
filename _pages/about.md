@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About Me
+title: About
 permalink: /
 subtitle: PhD Student working on Dark Matter Galactic Dynamics and conducting Dark Matter searches with KM3NeT. ## <a href='#'></a> 
 
@@ -25,8 +25,21 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<style>
+  /* The theme prints the "news" and "selected publications" headings in lower case.
+     These are the only <h2> on this page, so capitalising them here is enough.
+     This block only affects the about page — it is inlined into this page alone. */
+  h2 {
+    text-transform: capitalize;
+  }
+</style>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+Most of the universe is made of something nobody has ever seen. I spend my PhD trying to catch it doing something.
+
+I look in two very different places. One is underwater: with the KM3NeT neutrino telescopes, sunk on the floor of the Mediterranean, I look for the neutrinos dark matter would produce if it annihilates. The other is the shape of galaxies, I use the way stellar streams twist out of their plane, and the way rotation curves stubbornly refuse to fall off, to work out how round or how stretched a dark matter halo actually is. Neither approach assumes what dark matter is made of. Both just ask the data.
+
+Day to day this is code and statistics more than it is telescopes, which suits me: I like the moment a plot finally makes sense at 2am and I would not want it any other way.
+
+I also created **Physics Unplugged**, where I write and talk about the dark universe for people who do not do this for a living, on [Substack](https://adriakerr.substack.com) and [Instagram](https://www.instagram.com/physicsunplugged/). I started it because the greatest mysteries of the universe are far too good to keep among specialists and far more approachable than they are usually made to sound.

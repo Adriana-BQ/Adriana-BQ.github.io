@@ -25,58 +25,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-<!-- IMPORTANT: never leave a blank line inside this <style> block. Kramdown ends a raw
-     HTML block at the first blank line, and everything after it gets printed as page text. -->
-<style>
-  /* The theme prints "news" and "selected publications" in lower case; capitalise them. */
-  h2 { text-transform: capitalize; }
-  /* ...except headings written by hand, which are already cased correctly. */
-  h2.plain-title { text-transform: none; }
-  /* ---- hero band. Swap the picture by replacing assets/img/hero.jpg (keep the name). ---- */
-  /* Use something around 2000px wide and already dark: the overlay only darkens further. */
-  .hero {
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    min-height: clamp(200px, 34vw, 320px);
-    margin: 0.5rem 0 2.25rem;
-    padding: 1.5rem;
-    border-radius: 10px;
-    overflow: hidden;
-    background-image: url("/assets/img/hero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-color: #10161c; /* shows through if the image is missing */
-  }
-  /* the dark translucent layer — raise both numbers towards 1 to darken further */
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(8, 12, 16, 0.85), rgba(8, 12, 16, 0.45));
-  }
-  .hero-text {
-    position: relative; /* sits above the overlay */
-    margin: 0;
-    max-width: 26ch;
-    color: #fff;
-    font-size: clamp(1.15rem, 0.9rem + 1.2vw, 1.7rem);
-    line-height: 1.3;
-    font-weight: 500;
-    text-wrap: balance;
-    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
-  }
-  @media (max-width: 576px) {
-    .hero { padding: 1.1rem; }
-  }
-</style>
  
-<div class="hero">
-  <p class="hero-text">Most of the universe is made of something nobody has ever seen.</p>
-</div>
 <h2 class="plain-title">About me</h2>
 
-I spend my PhD trying to catch it doing something. I look in two very different places. One is underwater: with the KM3NeT neutrino telescopes, sunk on the floor of the Mediterranean, I look for the neutrinos dark matter would produce if it annihilates. The other is the shape of galaxies, I use the way stellar streams twist out of their plane, and the way rotation curves stubbornly refuse to fall off, to work out how round or how stretched a dark matter halo actually is. Neither approach assumes what dark matter is made of. Both just ask the data.
+Most of the universe is made of something nobody has ever seen. I spend my PhD trying to catch it doing something.
+
+I look in two very different places. One is underwater: with the KM3NeT neutrino telescopes, sunk on the floor of the Mediterranean, I look for the neutrinos dark matter would produce if it annihilates. The other is the shape of galaxies, I use the way stellar streams twist out of their plane, and the way rotation curves stubbornly refuse to fall off, to work out how round or how stretched a dark matter halo actually is. Neither approach assumes what dark matter is made of. Both just ask the data.
 
 Day to day this is code and statistics more than it is telescopes, which suits me: I like the moment a plot finally makes sense at 2am and I would not want it any other way.
 

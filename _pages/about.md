@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Student working on Dark Matter Galactic Dynamics and conducting Dark Matter searches with KM3NeT. ## <a href='#'></a> 
+subtitle:  <strong>PhD Student working on Dark Matter Galactic Dynamics and conducting Dark Matter searches with <a href='https://www.km3net.org/'>KM3NeT</a>.</strong>
 
 profile:
   align: right

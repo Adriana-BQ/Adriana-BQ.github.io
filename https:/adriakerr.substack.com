@@ -447,16 +447,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-new-collaboration-with-jorge-peñarrubia-royal-observatory-edinburgh-and-felipe-j-llanes-estrada-ucm-n-body-simulations-of-the-milky-way-to-understand-how-the-spiral-feature-in-angular-momentum-space-forms",
+          title: 'New collaboration with Jorge Peñarrubia (Royal Observatory Edinburgh) and Felipe J. Llanes-Estrada (UCM):...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-gave-a-talk-on-wimp-dark-matter-searches-from-the-galactic-centre-with-km3net-orca-at-identification-of-dark-matter-2026-in-zaragoza",
+          title: 'Gave a talk on WIMP dark matter searches from the Galactic Centre with...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-back-from-a-three-month-research-stay-at-queen-s-university-in-kingston-canada-working-with-aaron-vincent-s-group-on-boosted-dark-matter-searches-with-km3net-orca-the-collaboration-continues",
+          title: 'Back from a three-month research stay at Queen’s University in Kingston, Canada, working...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',

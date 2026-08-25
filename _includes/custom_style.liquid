@@ -1,0 +1,320 @@
+{%- comment -%}
+  ============================================================================
+  ALL custom CSS for this site lives in this one file.
+
+  Every page pulls it in with a single line, right after its front matter:
+
+      {% include custom_style.liquid %}
+
+  Why here and not in the pages themselves: one source of truth, and Kramdown
+  never gets a chance to mangle it. (A style block written inside a .md page
+  breaks the moment it contains a blank line — Kramdown ends the raw-HTML block
+  there and prints the rest as visible text.)
+
+  This file is a NEW file, not an override of anything the al-folio gem ships,
+  so theme updates can never conflict with it.
+  ============================================================================
+{%- endcomment -%}
+<style>
+  /* ================= hero band (about page) ================= */
+  /* ---- hero band. Swap the picture by replacing assets/img/hero.jpg (keep the name). ---- */
+  /* Use something around 2000px wide and already dark: the overlay only darkens further. */
+  .hero {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    min-height: clamp(200px, 34vw, 320px);
+    margin: 0.5rem 0 2.25rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url("/assets/img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #10161c; /* shows through if the image is missing */
+  }
+  /* the dark translucent layer — raise both numbers towards 1 to darken further */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(8, 12, 16, 0.85), rgba(8, 12, 16, 0.45));
+  }
+  .hero-text {
+    position: relative; /* sits above the overlay */
+    margin: 0;
+    max-width: 26ch;
+    color: #fff;
+    font-size: clamp(1.15rem, 0.9rem + 1.2vw, 1.7rem);
+    line-height: 1.3;
+    font-weight: 500;
+    text-wrap: balance;
+    text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+  }
+  @media (max-width: 576px) {
+    .hero { padding: 1.1rem; }
+  }
+  /* ================= outreach items ================= */
+  .outreach-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .outreach-item .outreach-figure {
+    flex: 0 0 220px;
+    max-width: 100%;
+  }
+  .outreach-item .outreach-figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  }
+  .outreach-item .outreach-text {
+    flex: 1 1 300px;
+  }
+  .outreach-item .outreach-text h2 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+  }
+  .outreach-meta {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 0.6rem;
+  }
+  /* ================= talks list ================= */
+  .talk {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  }
+  .talk:last-of-type {
+    border-bottom: none;
+  }
+  .talk .talk-title {
+    font-weight: 600;
+  }
+  .talk .talk-where {
+    display: block;
+    font-size: 0.92rem;
+    opacity: 0.8;
+    margin-top: 0.15rem;
+  }
+  .talk .talk-links {
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+  }
+  .talk .talk-links a {
+    margin-right: 0.8rem;
+  }
+  .talk-kind {
+    display: inline-block;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.12rem 0.45rem;
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.45);
+    vertical-align: 2px;
+    margin-right: 0.5rem;
+    opacity: 0.85;
+  }
+  /* ================= thesis header ================= */
+  .thesis-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+  }
+  .thesis-hero .thesis-cover {
+    flex: 0 0 200px;
+    max-width: 100%;
+  }
+  .thesis-hero .thesis-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.22);
+  }
+  .thesis-hero .thesis-meta {
+    flex: 1 1 300px;
+  }
+  .thesis-meta dl {
+    margin: 0;
+  }
+  .thesis-meta dt {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-top: 0.8rem;
+  }
+  .thesis-meta dd {
+    margin: 0.1rem 0 0 0;
+  }
+  .thesis-actions {
+    margin-top: 1.4rem;
+  }
+  .thesis-actions a {
+    display: inline-block;
+    margin: 0 0.6rem 0.6rem 0;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 6px;
+    font-size: 0.88rem;
+    text-decoration: none;
+  }
+  /* ================= publication sections ================= */
+  .pub-section {
+    margin-top: 2.6rem;
+  }
+  .pub-section:first-of-type {
+    margin-top: 1.4rem;
+  }
+  .pub-section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid currentColor;
+    margin-bottom: 0.5rem;
+  }
+  .pub-section-head h2 {
+    margin: 0;
+  }
+  .pub-section-note {
+    font-size: 0.9rem;
+    opacity: 0.75;
+    margin: 0.4rem 0 0.8rem;
+  }
+  /* ================= contact columns ================= */
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+  }
+  .contact-grid > div {
+    flex: 1 1 260px;
+  }
+  .contact-grid h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+  .contact-grid ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .contact-grid li {
+    margin-bottom: 0.35rem;
+  }
+  /* ================= certifications ================= */
+  .cert {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.25rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+  }
+  .cert:last-of-type { border-bottom: none; }
+  .cert-body { flex: 1 1 18rem; }
+  .cert-name { display: block; font-weight: 600; }
+  .cert-issuer { display: block; font-size: 0.9rem; opacity: 0.75; }
+  .cert-side {
+    display: flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  .cert-date { opacity: 0.7; font-variant-numeric: tabular-nums; }
+  /* ================= projects: expandable boxes ================= */
+  .proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    align-items: start;
+    gap: 0.85rem;
+    margin: 0.9rem 0 2.2rem;
+  }
+  .proj {
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .proj:hover { border-color: rgba(128, 128, 128, 0.65); }
+  .proj[open] { box-shadow: 0 4px 18px -10px rgba(0, 0, 0, 0.45); }
+  .proj > summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 0.85rem 2.2rem 0.85rem 1rem;
+    position: relative;
+  }
+  .proj > summary::-webkit-details-marker { display: none; }
+  /* the chevron, drawn in CSS so it needs no icon font */
+  .proj > summary::after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    top: 1.35rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    opacity: 0.5;
+    transform: rotate(45deg);
+    transition: transform 0.18s ease;
+  }
+  .proj[open] > summary::after { transform: rotate(-135deg); }
+  .proj > summary:focus-visible { outline: 2px solid currentColor; outline-offset: -2px; }
+  .proj-name { display: block; font-weight: 600; line-height: 1.3; }
+  .proj-meta {
+    display: block;
+    font-size: 0.78rem;
+    opacity: 0.68;
+    margin-top: 0.22rem;
+  }
+  .proj-body {
+    padding: 0 1rem 1rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.22);
+    margin-top: 0.1rem;
+    padding-top: 0.85rem;
+  }
+  .proj-body p { margin: 0 0 0.6rem; font-size: 0.93rem; }
+  .proj-body p:last-child { margin-bottom: 0; }
+  .proj-cite { font-size: 0.83rem; opacity: 0.8; }
+  @media (prefers-reduced-motion: reduce) {
+    .proj, .proj > summary::after { transition: none; }
+  }
+{%- if page.permalink == "/" %}
+  /* ---- about page only: heading capitalisation ---- */
+  /* The theme prints "news" and "selected publications" in lower case; capitalise them. */
+  h2 { text-transform: capitalize; }
+  /* ...except headings written by hand, which are already cased correctly. */
+  h2.plain-title { text-transform: none; }
+{%- endif %}
+  /* ========================================================================
+     OPTIONAL: a background image behind EVERY page, with a dark layer on top.
+     Off by default. To switch it on, delete the two lines marked DELETE below
+     and put your picture at assets/img/site-bg.jpg.
+     Note this fights the theme's light mode: turn light mode off by setting
+     `enable_darkmode: false` in _config.yml, or expect dark text on a dark
+     photo. Tune the two rgba numbers to taste (higher = darker).
+     ======================================================================== */
+  /* DELETE THIS LINE TO ENABLE
+  body {
+    background-image: linear-gradient(rgba(8, 12, 16, 0.82), rgba(8, 12, 16, 0.82)),
+                      url("/assets/img/site-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #e8eef2;
+  }
+  DELETE THIS LINE TOO */
+</style>

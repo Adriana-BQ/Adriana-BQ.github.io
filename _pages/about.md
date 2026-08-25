@@ -28,10 +28,12 @@ latest_posts:
  
 <h2 class="plain-title">About me</h2>
 
-Most of the universe is made of something nobody has ever seen. I spend my PhD trying to catch it doing something.
+I’m a PhD researcher in astrophysics working at the intersection of particle physics, astrophysics, and data analysis.
 
-I look in two very different places. One is underwater: with the KM3NeT neutrino telescopes, sunk on the floor of the Mediterranean, I look for the neutrinos dark matter would produce if it annihilates. The other is the shape of galaxies, I use the way stellar streams twist out of their plane, and the way rotation curves stubbornly refuse to fall off, to work out how round or how stretched a dark matter halo actually is. Neither approach assumes what dark matter is made of. Both just ask the data.
+My research uses observations and simulations to investigate some of the most interesting questions in modern astrophysics. I work with the KM3NeT neutrino telescopes, as well as galactic dynamics and large-scale astronomical data, using statistical methods, numerical modelling, and scientific computing to connect theory with observations.
 
-Day to day this is code and statistics more than it is telescopes, which suits me: I like the moment a plot finally makes sense at 2am and I would not want it any other way.
+Most of my work happens in code: developing analysis pipelines, running simulations, building statistical models, and trying to extract meaningful signals from complex datasets. I enjoy problems where physics, computation, and data all have to work together.
 
-I also created **Physics Unplugged**, where I write and talk about the dark universe for people who do not do this for a living, on [Substack](https://adriakerr.substack.com) and [Instagram](https://www.instagram.com/physicsunplugged/). I started it because the greatest mysteries of the universe are far too good to keep among specialists and far more approachable than they are usually made to sound.
+Beyond research, I created **Physics Unplugged**, an outreach project where I write and talk about physics and astrophysics for people outside academia, on [Substack](https://adriakerr.substack.com) and [Instagram](https://www.instagram.com/physicsunplugged/).
+
+I’m interested in exploring questions across astrophysics and particle physics, and in building tools and methods that help us understand the universe from the data we can actually observe.

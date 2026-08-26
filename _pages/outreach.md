@@ -2,14 +2,14 @@
 layout: page
 permalink: /outreach/
 title: Outreach
-description: Talking about physics with people who do not do physics for a living.
+description: 
 nav: true
 nav_order: 8
 ---
 {% include custom_style.liquid %}
 <div class="oreach-head">
   <h2 class="plain-title">Physics Unplugged <span class="status-tag">active</span></h2>
-  <p>Physics Unplugged is where I explore the messy, fascinating life of doing physics — from research adventures and dark matter analyses to the everyday challenges of being a scientist.</p>
+  <p>Physics Unplugged is where I explore the messy, fascinating life of doing physics, from research adventures and dark matter analyses to the everyday challenges of being a scientist.</p>
 </div>
 <div class="channels">
   <a class="channel" href="https://adriakerr.substack.com/">

@@ -13,7 +13,7 @@ nav_order: 5
   2. Find the talk below and add this line inside its <div class="talk-links">:
          <a href="/assets/pdf/talks/YOUR-FILE.pdf">slides</a>
      If the talk has no <div class="talk-links"> yet, there is a commented-out one
-     ready — delete the <!-- and --> around it.
+     ready — delete the <!-- and around it.
   3. A link with no file behind it gives a 404, so only uncomment once the PDF is in.
   External links (recordings, indico pages) work the same way, with a full URL.
   NEVER leave a blank line inside a <div> — Kramdown ends raw HTML there and prints

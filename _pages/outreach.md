@@ -1,15 +1,15 @@
 ---
 layout: page
 permalink: /outreach/
-title: Outreach
-description: 
+title: outreach
+description: Science communication and outreach events.
 nav: true
 nav_order: 8
 ---
 {% include custom_style.liquid %}
 <div class="oreach-head">
   <h2 class="plain-title">Physics Unplugged <span class="status-tag">active</span></h2>
-  <p>Physics Unplugged is where I explore the messy, fascinating life of doing physics, from research adventures and dark matter analyses to the everyday challenges of being a scientist.</p>
+  <p>Physics Unplugged is where I explore the messy, fascinating life of doing physics — from research adventures and dark matter analyses to the everyday challenges of being a scientist.</p>
 </div>
 <div class="channels">
   <a class="channel" href="https://adriakerr.substack.com/">
@@ -25,21 +25,40 @@ nav_order: 8
     <span class="channel-handle">@physicsunplugged-abq</span>
   </a>
 </div>
-<!--
-  ROOM TO GROW
-  When you have other outreach to list — school visits, public talks, festivals,
-  press — copy the block below, uncomment it, and put a photo in
-  assets/img/outreach/. Delete it entirely if you would rather keep this page
-  to Physics Unplugged alone.
-
-<div class="outreach-item">
-  <div class="outreach-figure">
-    <img src="{{ '/assets/img/outreach/activity1.jpg' | relative_url }}" alt="">
-  </div>
-  <div class="outreach-text">
-    <h2>Activity name</h2>
-    <div class="outreach-meta">Organiser · 2026</div>
-    <p>Two or three sentences: what it is, who it reaches, what your role is.</p>
-  </div>
+## Outreach events organised
+<div class="talk">
+  <span class="talk-kind">visit</span><span class="talk-title">Guided visit for high-school students to the KM3NeT laboratory</span>
+  <span class="talk-where">IFIC (CSIC – Universitat de València), Valencia, Spain · February 2026</span>
 </div>
--->
+<div class="talk">
+  <span class="talk-kind">course</span><span class="talk-title">Seminar on dark matter searches</span>
+  <span class="talk-where">Outreach course for high-school students, McDonald Institute, Queen's University, Kingston, Canada · 11 October 2025</span>
+</div>
+<div class="talk">
+  <span class="talk-kind">summer school</span><span class="talk-title">Seminar on dark matter searches</span>
+  <span class="talk-where">The Physics Erasmus Summer School, Universitat de València, Spain · 11 September 2024</span>
+</div>
+<div class="talk">
+  <span class="talk-kind">tutor</span><span class="talk-title">Summer School for Undergraduate Students 2024 — dark matter searches with KM3NeT</span>
+  <span class="talk-where">IFIC Summer School, Instituto de Física Corpuscular, Valencia, Spain · 22 July 2024</span>
+</div>
+<div class="talk">
+  <span class="talk-kind">tutor</span><span class="talk-title">Summer School for Undergraduate Students 2023 — dark matter searches with KM3NeT</span>
+  <span class="talk-where">IFIC Summer School, Instituto de Física Corpuscular, Valencia, Spain · 10 July 2023</span>
+</div>
+<div class="talk">
+  <span class="talk-kind">open day</span><span class="talk-title">“Observe the Universe from the Depths of the Sea: Neutrino Telescopes”</span>
+  <span class="talk-where">Expociencia IFIC 2023, Universitat de València, Spain · 6 May 2023</span>
+</div>
+<div class="talk">
+  <span class="talk-kind">tutor</span><span class="talk-title">Course on gauge symmetries and the Standard Model</span>
+  <span class="talk-where">Interdisciplinary Summer School 2022, Universitat Politècnica de València, Spain · 18 July 2022</span>
+</div>
+<div class="talk">
+  <span class="talk-kind">talk series</span><span class="talk-title">Physics Talks from the Sofa — online cycle of talks for students</span>
+  <span class="talk-where">Organised by the RSEF Young Minds student delegation, Spanish Royal Society of Physics · 2021</span>
+</div>
+<div class="talk">
+  <span class="talk-kind">visit</span><span class="talk-title">Talk and visit to the CSIC facilities</span>
+  <span class="talk-where">Organised by the RSEF Young Minds student delegation, Madrid, Spain · 13 February 2020</span>
+</div>

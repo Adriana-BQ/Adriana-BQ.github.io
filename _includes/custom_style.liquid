@@ -291,12 +291,54 @@
   @media (prefers-reduced-motion: reduce) {
     .proj, .proj > summary::after { transition: none; }
   }
-{%- if page.permalink == "/" %}
-  /* ---- about page only: heading capitalisation ---- */
-  /* The theme prints "news" and "selected publications" in lower case; capitalise them. */
-  h2 { text-transform: capitalize; }
-  /* ...except headings written by hand, which are already cased correctly. */
+  /* ================= outreach channels ================= */
+  .oreach-head { margin-bottom: 1.4rem; }
+  .oreach-head h2 { margin: 0 0 0.5rem; }
+  .status-tag {
+    display: inline-block;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    vertical-align: 0.35em;
+    padding: 0.14rem 0.42rem;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 999px;
+    opacity: 0.75;
+    font-weight: 600;
+  }
+  .channels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 0.75rem;
+    margin: 1.2rem 0 2rem;
+  }
+  .channel {
+    display: block;
+    padding: 0.9rem 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .channel:hover { border-color: rgba(128, 128, 128, 0.7); transform: translateY(-2px); }
+  .channel:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+  .channel-plat {
+    display: block;
+    font-size: 0.68rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .channel-handle { display: block; font-weight: 600; }
+  @media (prefers-reduced-motion: reduce) { .channel { transition: none; } }
+  /* headings written by hand keep the casing they were typed in */
   h2.plain-title { text-transform: none; }
+{%- if page.permalink == "/" %}
+  /* ---- about page only: the theme prints "news" and "selected publications" lower case ---- */
+  h2 { text-transform: capitalize; }
 {%- endif %}
   /* ========================================================================
      OPTIONAL: a background image behind EVERY page, with a dark layer on top.

@@ -30,21 +30,21 @@ nav_order: 2
   <summary><span class="proj-name">Boosted dark matter searches</span><span class="proj-meta">KM3NeT/ORCA · with Aaron Vincent's group, Queen's University</span></summary>
   <div class="proj-body">
     <p>Standard WIMP searches assume dark matter in the halo is slow. Boosted scenarios do not: they predict a relativistic dark matter flux, which leaves a different signature in a neutrino telescope. This project extends the ORCA dark matter programme to cover them.</p>
-    <p class="proj-cite">REPLACE — one sentence on the specific scenario or observable, if you want it here.</p>
+    <p class="proj-cite"></p>
   </div>
 </details>
 </div>
 ### Dark matter: data-driven approach
 <div class="proj-grid">
 <details class="proj">
-  <summary><span class="proj-name">The spiral feature in Milky Way angular-momentum space</span><span class="proj-meta">N-body simulations · with Jorge Peñarrubia, Royal Observatory Edinburgh</span></summary>
+  <summary><span class="proj-name">The spiral feature in Milky Way angular-momentum space</span><span class="proj-meta">N-body simulations · with Jorge Peñarrubia, Royal Observatory Edinburgh and F. J. Llanes-Estrada</span></summary>
   <div class="proj-body">
     <p>Stars in the Milky Way trace a spiral pattern when plotted in angular-momentum space. This project uses N-body simulations of the Galaxy to work out how that feature forms and what it can tell us about the potential it formed in.</p>
-    <p class="proj-cite">REPLACE — add a line on the expected result, or delete this line.</p>
+    <p class="proj-cite"></p>
   </div>
 </details>
 <details class="proj">
-  <summary><span class="proj-name">Halo shapes from gravitational lensing</span><span class="proj-meta">with Abigail Belarde</span></summary>
+  <summary><span class="proj-name">Halo shapes from gravitational lensing</span><span class="proj-meta">with Abigail Belarde and F. J. Llanes-Estrada</span></summary>
   <div class="proj-body">
     <p>A third, independent handle on the same question the rotation-curve and stellar-stream work asks: lensing observables constrain the geometry of the mass distribution without assuming a halo profile.</p>
     <p class="proj-cite">REPLACE — add a line on the method or dataset, or delete this line.</p>

@@ -324,7 +324,14 @@
   .channel-handle { display: block; font-weight: 600; }
   @media (prefers-reduced-motion: reduce) { .channel { transition: none; } }
   /* headings written by hand keep the casing they were typed in */
-  h2.plain-title { text-transform: none; }
+  h2.plain-title { text-transform: none !important; }
+  /* The theme prints its "news" and "selected publications" headings in lower case.
+     Both are an <h2> wrapping a link to /news/ or /publications/, so target exactly
+     those two and nothing else — no page conditional, no risk to other headings. */
+  h2:has(> a[href$="/news/"]),
+  h2:has(> a[href$="/publications/"]) {
+    text-transform: capitalize !important;
+  }
   /* ========================================================================
      OPTIONAL: a background image behind EVERY page, with a dark layer on top.
      Off by default. To switch it on, delete the two lines marked DELETE below

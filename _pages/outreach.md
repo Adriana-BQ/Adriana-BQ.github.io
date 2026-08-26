@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /outreach/
-title: outreach
+title: Outreach
 description: Science communication and outreach events.
 nav: true
 nav_order: 6
@@ -9,7 +9,7 @@ nav_order: 6
 {% include custom_style.liquid %}
 <div class="oreach-head">
   <h2 class="plain-title">Physics Unplugged <span class="status-tag">active</span></h2>
-  <p>Physics Unplugged is where I explore the messy, fascinating life of doing physics — from research adventures and dark matter analyses to the everyday challenges of being a scientist.</p>
+  <p>Physics Unplugged is where I explore the messy, fascinating life of doing physics, from research adventures and dark matter analyses to the everyday challenges of being a scientist.</p>
 </div>
 <div class="channels">
   <a class="channel" href="https://adriakerr.substack.com/">

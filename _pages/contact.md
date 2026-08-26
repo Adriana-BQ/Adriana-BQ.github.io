@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /contact/
-title: contact
-description: How to reach me.
-nav: true
+title: Contact
+description: 
+nav: false
 nav_order: 8
 ---
 

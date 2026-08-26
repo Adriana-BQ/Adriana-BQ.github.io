@@ -4,7 +4,7 @@ permalink: /outreach/
 title: outreach
 description: Science communication and outreach events.
 nav: true
-nav_order: 8
+nav_order: 6
 ---
 {% include custom_style.liquid %}
 <div class="oreach-head">

@@ -4,7 +4,7 @@ permalink: /contact/
 title: contact
 description: How to reach me.
 nav: true
-nav_order: 10
+nav_order: 8
 ---
 
 {% include custom_style.liquid %}

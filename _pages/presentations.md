@@ -83,6 +83,10 @@ nav_order: 5
   <span class="talk-kind">talk</span><span class="talk-title">Dark Matter Searches with KM3NeT</span>
   <span class="talk-where">MultiDark Workshop, Instituto de Astrofísica de Canarias, Tenerife, Spain · 17–19 June 2026</span>
 </div>
+<div class="talk">
+  <span class="talk-kind">talk</span><span class="talk-title">Dark Matter and Exotics</span>
+  <span class="talk-where">KM3NeT Bootcamp 2026, Granada, Spain · 20-23 January 2026</span>
+</div>
 ### 2025
 <div class="talk">
   <span class="talk-kind">invited</span><span class="talk-title">Tracing the Invisible: From Galactic Rotations to Neutrinos and the Shape of Dark Matter Haloes</span>

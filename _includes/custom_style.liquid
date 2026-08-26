@@ -335,10 +335,17 @@
   .channel-handle { display: block; font-weight: 600; }
   @media (prefers-reduced-motion: reduce) { .channel { transition: none; } }
   /* headings written by hand keep the casing they were typed in */
-  h2.plain-title { text-transform: none; }
-{%- if page.permalink == "/" %}
-  /* ---- about page only: the theme prints "news" and "selected publications" lower case ---- */
-  h2 { text-transform: capitalize; }
+  h2.plain-title { text-transform: none !important; }
+  /* The theme prints its "news" and "selected publications" headings in lower case.
+     Both are an <h2> wrapping a link to /news/ or /publications/, so target exactly
+     those two and nothing else — no page conditional, no risk to other headings. */
+  h2:has(> a[href$="/news/"]),
+  h2:has(> a[href$="/publications/"]) {
+    text-transform: capitalize !important;
+  }
+{%- if page.permalink == "/" or page.url == "/" %}
+  /* Belt and braces: on the about page these are the only theme-written h2s. */
+  h2:not(.plain-title) { text-transform: capitalize; }
 {%- endif %}
   /* ========================================================================
      OPTIONAL: a background image behind EVERY page, with a dark layer on top.

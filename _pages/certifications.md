@@ -3,7 +3,7 @@ layout: page
 permalink: /certifications/
 title: Certifications
 description: Continuous and specialised training.
-nav: true
+nav: false
 nav_order: 7
 ---
 {% include custom_style.liquid %}

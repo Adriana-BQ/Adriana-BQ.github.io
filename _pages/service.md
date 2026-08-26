@@ -3,7 +3,7 @@ layout: page
 permalink: /service/
 title: Committees
 description: Committees, forums and scientific societies.
-nav: true
+nav: false
 nav_order: 9
 ---
 {% include custom_style.liquid %}

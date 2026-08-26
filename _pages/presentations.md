@@ -3,7 +3,7 @@ layout: page
 permalink: /presentations/
 title: Presentations
 description: Talks, seminars and posters, newest first.
-nav: true
+nav: false
 nav_order: 5
 ---
 {% include custom_style.liquid %}

@@ -10,9 +10,9 @@ sitemap: false
 # not also appear as a top-level item. Add `- title: divider` between children
 # for a separator line.
 children:
-  - title: presentations
+  - title: Presentations
     permalink: /presentations/
-  - title: certifications
+  - title: Certifications
     permalink: /certifications/
   - title: Committees
     permalink: /service/
